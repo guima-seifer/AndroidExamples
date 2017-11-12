@@ -7,7 +7,7 @@
     tools:context="com.fernandoguima.profiler.createaccount.CreateAccountActivity">
 
     <FrameLayout
-        android:id="@+id/cont_create_account_fragment"
+        android:id="@+id/cont_create_fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

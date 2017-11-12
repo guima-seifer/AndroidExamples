@@ -2,12 +2,84 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/root_login_fragment"
     tools:context="com.fernandoguima.profiler.login.LoginFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cont_login_fragment"
+    android:gravity="center_horizontal">
 
+    <TextView
+        android:id="@+id/tv_login_header"
+        style="@style/Label.CredentialHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_login_email"
+        style="@style/Label.Sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_login_header"
+        android:text="@string/prompt_email" />
+
+    <EditText
+        android:id="@+id/et_login_email"
+        style="@style/InputField.Credential.Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_login_email"
+        android:hint="@string/hint_email"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_login_password"
+        style="@style/Label.Sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_login_email"
+        android:text="@string/prompt_password"
+
+        />
+
+    <EditText
+        android:id="@+id/et_login_password"
+        style="@style/InputField.Credential.Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_login_password"
+        android:hint="@string/hint_password" />
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/Button.Flat.Primary"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/et_login_password"
+        android:layout_centerHorizontal="true"
+        android:text="@string/action_sign_in" />
+
+    <Button
+        android:id="@+id/btn_create_account"
+        style="@style/Button.Flat.Primary"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:text="@string/action_register" />
+
+</RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pro_login_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"/>
 </FrameLayout>
