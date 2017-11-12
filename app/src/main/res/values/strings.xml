@@ -9,4 +9,9 @@
     <string name="hint_password">123456</string>
     <string name="action_sign_in">Sign in</string>
     <string name="action_register">Register</string>
+    <string name="prompt_confirm_password">Confirm Password</string>
+    <string name="header_create">New Account</string>
+    <string name="prompt_name">Name</string>
+    <string name="hint_username">example</string>
+    <string name="prompt_create_account">Create Account</string>
 </resources>
